@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../images/logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,8 +11,23 @@ const Header = () => {
 
   return (
     <header className="bg-[#1CC458] p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-2xl font-bold">Shamba Records</div>
+      <div className="container mx-auto flex items-center justify-between">
+        <div className="flex items-center space-x-4">
+          <img src={Logo} alt="Logo" className="h-10" />
+        </div>
+
+        {/* Centered Links for Desktop */}
+        <nav className="hidden md:flex flex-grow justify-center space-x-4">
+          <Link to="/" className="text-white hover:text-gray-300">
+            Crop Calendar
+          </Link>
+          <Link to="#" className="text-white hover:text-gray-300">
+            Vet
+          </Link>
+          <Link to="#" className="text-white hover:text-gray-300">
+            About
+          </Link>
+        </nav>
 
         {/* Menu button for mobile */}
         <button
@@ -33,20 +49,6 @@ const Header = () => {
             />
           </svg>
         </button>
-
-        {/* Links for desktop */}
-        <nav className="hidden md:flex space-x-6">
-          {" "}
-          <Link to="/" className="text-white hover:text-gray-300">
-            Crop Calender
-          </Link>
-          <Link to="#" className="text-white hover:text-gray-300">
-            Vet
-          </Link>
-          <Link to="#" className="text-white hover:text-gray-300">
-            About
-          </Link>
-        </nav>
 
         {/* Links for mobile */}
         {isOpen && (
