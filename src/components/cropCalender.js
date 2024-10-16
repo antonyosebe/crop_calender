@@ -1,15 +1,16 @@
 import React from "react";
-import image from "../images/Crop.png";
+import image1 from "../images/Crop.png";
+import image2 from "../images/land_preparation.jpg";
+import image3 from "../images/planting.jpg";
+import image4 from "../images/maize_growing.jpg";
+import image5 from "../images/harvesting.jpg";
 
 const cropCalender = () => {
   return (
-    // <div style={styles.rightCurvedDiv}>
-    //   This div is curved on the right side!
-    // </div>
     <div>
       <div
         className="w-full bg-cover bg-center bg-black"
-        style={{ backgroundImage: `url(${image})`, height: "40rem" }}
+        style={{ backgroundImage: `url(${image1})`, height: "40rem" }}
       >
         <div className="bg-black bg-opacity-50 h-full w-full flex items-center justify-center">
           <h1 className="text-white text-6xl font-bold">
@@ -37,95 +38,135 @@ const cropCalender = () => {
             </div>
 
             <div className="md:w-2/3 mt-6 md:mt-0 relative">
-              <img src={image} alt="crop" className="rounded-md shadow-md" />
+              <img src={image1} alt="crop" className="rounded-md shadow-md" />
             </div>
           </div>
         </div>
       </div>
       <div className="bg-white py-16 px-6 lg:px-20">
         <div className="text-center mb-16">
-          <p className="text-sm text-gray-600">Our Services</p>
+          {/* <p className="text-sm text-gray-600">Our Services</p> */}
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Five Pathways is here to simplify <br /> your retirement planning.
+            Crop Calender is here to simplify <br /> your farming journey
           </h1>
           <p className="text-gray-700 text-lg max-w-3xl mx-auto">
-            We’ll work with you to create a personalized strategy that
-            incorporates all of the paths of retirement planning:{" "}
-            <span className="font-semibold">Income</span>,{" "}
-            <span className="font-semibold">Taxes</span>,
-            <span className="font-semibold"> Investments</span>,{" "}
-            <span className="font-semibold">Healthcare</span>, and{" "}
-            <span className="font-semibold">Estate Planning</span>.
+            We’ll work with you to create a personalized stages for each season:{" "}
+            <span className="font-semibold">Stage</span>,{" "}
+            <span className="font-semibold">Stage</span>,
+            <span className="font-semibold">Stage</span>,{" "}
+            <span className="font-semibold">Stage</span>, and{" "}
+            <span className="font-semibold">Stage</span>.
           </p>
         </div>
-
         {/* Main Content Section */}
         <div className="flex flex-col lg:flex-row justify-between items-start space-y-16 lg:space-y-0">
           {/* Left Image and Content */}
           <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
             <img
-              src="https://via.placeholder.com/600x400"
+              src={image2}
               alt="Mountain landscape"
               className="w-full h-auto rounded-lg shadow-md mb-6"
             />
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Tax Planning
-            </h2>
-            <p className="text-gray-600 mb-4">
-              Your retirement plans may not include the IRS. But rest assured,
-              the IRS has plans for your retirement! Let’s work together to make
-              sure you get to keep the money you’ve earned. We’ll show you how
-              to diversify your tax strategy and maximize your retirement
-              benefits. We’ll make sure that paying taxes isn’t a roadblock on
-              your way to retirement.
-            </p>
-            <button className="bg-teal-500 text-white py-2 px-4 rounded-md hover:bg-teal-600 transition">
-              Learn more
-            </button>
           </div>
 
           {/* Right Image and Content */}
           <div className="lg:w-1/2 flex flex-col items-center lg:items-start lg:ml-12">
             <div className="w-full relative mb-6">
-              <img
-                src="https://via.placeholder.com/600x400"
-                alt="Desert landscape"
-                className="w-full h-auto rounded-lg shadow-md"
-              />
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                LAND PREPARATION
+              </h2>
+              <p className="text-gray-600 mb-4">
+                This initial stage sets the foundation for successful crop
+                growth. It involves clearing the land of weeds, debris, and
+                previous crop remnants, followed by plowing and leveling. Proper
+                land preparation improves soil structure, promotes root growth,
+                and enhances water retention, creating an ideal environment for
+                planting.
+              </p>
             </div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Retirement Income Planning
-            </h2>
-            <p className="text-gray-600 mb-4">
-              You’ve got goals. But goals cost money. Make sure you have an
-              income that works for you in retirement. And while we’re at it,
-              why not make that income guaranteed? We’ll show you how to get the
-              most out of your current assets, pension, and/or Social Security
-              (whatever you might have). We’ll also be along for the full ride,
-              helping to smooth things out when the road ahead gets a little
-              bumpy. There are no shortcuts on the path to retirement, but we do
-              know all kinds of clever side streets.
-            </p>
-            <button className="bg-teal-500 text-white py-2 px-4 rounded-md hover:bg-teal-600 transition">
-              Learn more
-            </button>
+          </div>
+        </div>
+        {/* section two */}
+        <div className="flex flex-col lg:flex-row justify-between items-start space-y-16 lg:space-y-0">
+          <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
+            <div className="w-full relative mb-6">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                PLANTING
+              </h2>
+              <p className="text-gray-600 mb-4">
+                Planting is a critical step where seeds or seedlings are sown
+                into the prepared soil. Timing is crucial as planting too early
+                or late can affect crop growth and yield. Farmers need to
+                consider the season, crop variety, and spacing between plants to
+                ensure optimal conditions for germination and development.
+              </p>
+            </div>
+          </div>
+          <div className="lg:w-1/2 flex flex-col items-center lg:items-start lg:ml-12">
+            <img
+              src={image3}
+              alt="Mountain landscape"
+              className="w-full h-auto rounded-lg shadow-md mb-6"
+            />
+          </div>
+        </div>
+        {/* section three */}
+        <div className="flex flex-col lg:flex-row justify-between items-start space-y-16 lg:space-y-0">
+          {/* Left Image and Content */}
+          <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
+            <img
+              src={image4}
+              alt="Mountain landscape"
+              className="w-full h-auto rounded-lg shadow-md mb-6"
+            />
+          </div>
+
+          {/* Right Image and Content */}
+          <div className="lg:w-1/2 flex flex-col items-center lg:items-start lg:ml-12">
+            <div className="w-full relative mb-6">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                PLANTS GROWING
+              </h2>
+              <p className="text-gray-600 mb-4">
+                During the growth phase, plants require careful monitoring and
+                maintenance. This includes irrigation, fertilization, and
+                protection from pests and diseases. Providing the right
+                nutrients and water at this stage ensures healthy plant
+                development, while controlling pests safeguards the crop from
+                potential damage.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* section 4 */}
+        <div className="flex flex-col lg:flex-row justify-between items-start space-y-16 lg:space-y-0">
+          <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
+            <div className="w-full relative mb-6">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                HARVESTING
+              </h2>
+              <p className="text-gray-600 mb-4">
+                The final stage of the crop calendar is harvesting, where the
+                matured crops are collected. Harvesting at the right time is
+                vital to ensure quality and quantity. It often involves manual
+                or mechanical processes, depending on the scale of farming.
+                Proper storage and post-harvest handling are also essential to
+                minimize losses and maintain the value of the produce.
+              </p>
+            </div>
+          </div>
+
+          <div className="lg:w-1/2 lg: h- 80flex flex-col items-center lg:items-start lg:ml-12">
+            <img
+              src={image5}
+              alt="Mountain landscape"
+              className="w-full h-full rounded-lg shadow-md mb-6 object-cover"
+            />
           </div>
         </div>
       </div>
     </div>
   );
 };
-
-// const styles = {
-//   rightCurvedDiv: {
-//     width: "100vw",
-//     height: "500px",
-//     backgroundColor: "#1CC458",
-//     borderBottomRightRadius: "80px",
-//     display: "flex",
-//     color: "white",
-//     fontSize: "16px",
-//   },
-// };
 
 export default cropCalender;

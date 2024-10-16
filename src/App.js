@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <Router>
-        <Header />
+        {/* <Header /> */}
 
         <Routes>
           <Route path="/" element={<CropCalender />} />
