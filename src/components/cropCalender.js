@@ -1,24 +1,52 @@
 import React from "react";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/autoplay";
 import image1 from "../images/Crop.png";
 import image2 from "../images/land_preparation.jpg";
 import image3 from "../images/planting.jpg";
 import image4 from "../images/maize_growing.jpg";
 import image5 from "../images/harvesting.jpg";
 
+const images = [
+  { id: 1, src: image1, text: "Tired of Guessing \n when to Plant?" },
+  { id: 2, src: image2, text: "Unlock Your Farming Potential" },
+  { id: 3, src: image3, text: "Maximize Your Yields Today" },
+];
 const CropCalendar = () => {
   return (
     <div>
-      <div
-        className="w-full bg-cover bg-center bg-black"
-        style={{ backgroundImage: `url(${image1})`, height: "40rem" }}
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        modules={[Navigation, Autoplay]}
+        onSlideChange={() => console.log("Slide changed")}
+        onSwiper={(swiper) => console.log(swiper)}
       >
-        <div className="bg-black bg-opacity-50 h-full w-full flex items-center justify-center">
-          <h1 className="text-white text-6xl font-bold">
-            Tired of Guessing <br /> when to Plant?
-          </h1>
-        </div>
-      </div>
+        {images.map((image) => (
+          <SwiperSlide key={image.id}>
+            <div
+              className="w-full bg-cover bg-center bg-black"
+              style={{ backgroundImage: `url(${image.src})`, height: "40rem" }}
+            >
+              <div className="bg-black bg-opacity-50 h-full w-full flex items-center justify-center">
+                <h1 className="text-white text-6xl font-bold">
+                  {image.text.split("\n").map((line, index) => (
+                    <span key={index}>
+                      {line}
+                      <br />
+                    </span>
+                  ))}
+                </h1>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
       <div className="bg-cream min-h-screen flex justify-center items-center py-10 px-5">
         <div className="bg-white p-8 rounded-lg shadow-lg max-w-5xl w-full">
           <div className="text-center">
