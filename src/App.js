@@ -1,5 +1,5 @@
-import Header from "./components/Header";
-import CropCalender from "./components/cropCalender";
+// import Header from "./components/Header";
+import CropCalender from "./components/CropCalender";
 import "./index.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {

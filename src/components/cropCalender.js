@@ -1,11 +1,12 @@
 import React from "react";
+
 import image1 from "../images/Crop.png";
 import image2 from "../images/land_preparation.jpg";
 import image3 from "../images/planting.jpg";
 import image4 from "../images/maize_growing.jpg";
 import image5 from "../images/harvesting.jpg";
 
-const cropCalender = () => {
+const CropCalendar = () => {
   return (
     <div>
       <div
@@ -45,12 +46,11 @@ const cropCalender = () => {
       </div>
       <div className="bg-white py-16 px-6 lg:px-20">
         <div className="text-center mb-16">
-          {/* <p className="text-sm text-gray-600">Our Services</p> */}
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Crop Calender is here to simplify <br /> your farming journey
+            Crop Calendar is here to simplify <br /> your farming journey
           </h1>
           <p className="text-gray-700 text-lg max-w-3xl mx-auto">
-            We’ll work with you to create a personalized stages for each season:{" "}
+            We’ll work with you to create personalized stages for each season:{" "}
             <span className="font-semibold">Stage</span>,{" "}
             <span className="font-semibold">Stage</span>,
             <span className="font-semibold">Stage</span>,{" "}
@@ -64,7 +64,7 @@ const cropCalender = () => {
           <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
             <img
               src={image2}
-              alt="Mountain landscape"
+              alt="Land preparation"
               className="w-full h-auto rounded-lg shadow-md mb-6"
             />
           </div>
@@ -105,7 +105,7 @@ const cropCalender = () => {
           <div className="lg:w-1/2 flex flex-col items-center lg:items-start lg:ml-12">
             <img
               src={image3}
-              alt="Mountain landscape"
+              alt="Planting"
               className="w-full h-auto rounded-lg shadow-md mb-6"
             />
           </div>
@@ -116,7 +116,7 @@ const cropCalender = () => {
           <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
             <img
               src={image4}
-              alt="Mountain landscape"
+              alt="Plants growing"
               className="w-full h-auto rounded-lg shadow-md mb-6"
             />
           </div>
@@ -156,10 +156,10 @@ const cropCalender = () => {
             </div>
           </div>
 
-          <div className="lg:w-1/2 lg: h- 80flex flex-col items-center lg:items-start lg:ml-12">
+          <div className="lg:w-1/2 flex flex-col items-center lg:items-start lg:ml-12">
             <img
               src={image5}
-              alt="Mountain landscape"
+              alt="Harvesting"
               className="w-full h-full rounded-lg shadow-md mb-6 object-cover"
             />
           </div>
@@ -169,4 +169,4 @@ const cropCalender = () => {
   );
 };
 
-export default cropCalender;
+export default CropCalendar;
