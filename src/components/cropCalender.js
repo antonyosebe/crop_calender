@@ -9,11 +9,14 @@ import image2 from "../images/land_preparation.jpg";
 import image3 from "../images/planting.jpg";
 import image4 from "../images/maize_growing.jpg";
 import image5 from "../images/harvesting.jpg";
+import image6 from "../images/Carrots.jpg";
+import image7 from "../images/maize.jpeg";
+import image8 from "../images/farmer.png";
 
 const images = [
-  { id: 1, src: image1, text: "Tired of Guessing \n when to Plant?" },
-  { id: 2, src: image2, text: "Unlock Your Farming Potential" },
-  { id: 3, src: image3, text: "Maximize Your Yields Today" },
+  { id: 1, src: image8, text: "Tired of Guessing \n when to Plant?" },
+  { id: 2, src: image7, text: "Unlock Your Farming Potential" },
+  { id: 3, src: image6, text: "Maximize Your Yields Today" },
 ];
 const CropCalendar = () => {
   return (
