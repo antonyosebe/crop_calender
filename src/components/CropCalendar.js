@@ -18,7 +18,7 @@ const images = [
   { id: 2, src: image7, text: "Unlock Your Farming Potential" },
   { id: 3, src: image6, text: "Maximize Your Yields Today" },
 ];
-const CropCalender = () => {
+const CropCalendar = () => {
   return (
     <div>
       <Swiper
@@ -200,4 +200,4 @@ const CropCalender = () => {
   );
 };
 
-export default CropCalender;
+export default CropCalendar;

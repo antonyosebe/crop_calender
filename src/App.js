@@ -1,5 +1,5 @@
 // import Header from "./components/Header";
-import CropCalender from "./components/CropCalender";
+import CropCalendar from "./components/CropCalendar";
 import "./index.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
@@ -9,7 +9,7 @@ function App() {
         {/* <Header /> */}
 
         <Routes>
-          <Route path="/" element={<CropCalender />} />
+          <Route path="/" element={<CropCalendar />} />
         </Routes>
       </Router>
     </div>
