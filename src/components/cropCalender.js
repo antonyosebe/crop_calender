@@ -82,11 +82,11 @@ const CropCalender = () => {
           </h1>
           <p className="text-gray-700 text-lg max-w-3xl mx-auto">
             We’ll work with you to create personalized stages for each season:{" "}
-            <span className="font-semibold">Stage</span>,{" "}
-            <span className="font-semibold">Stage</span>,
-            <span className="font-semibold">Stage</span>,{" "}
-            <span className="font-semibold">Stage</span>, and{" "}
-            <span className="font-semibold">Stage</span>.
+            <span className="font-semibold">Land preparation</span>,{" "}
+            <span className="font-semibold">Planrting</span>,
+            <span className="font-semibold">Manuare Application</span>,{" "}
+            <span className="font-semibold">Vegetative growth</span>, and{" "}
+            <span className="font-semibold">Harvesting</span>.
           </p>
         </div>
         {/* Main Content Section */}
@@ -156,7 +156,7 @@ const CropCalender = () => {
           <div className="lg:w-1/2 flex flex-col items-center lg:items-start lg:ml-12">
             <div className="w-full relative mb-6">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                PLANTS GROWING
+                VEGETATIVE GROWTH
               </h2>
               <p className="text-gray-600 mb-4">
                 During the growth phase, plants require careful monitoring and
