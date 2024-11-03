@@ -83,8 +83,8 @@ const CropCalendar = () => {
           <p className="text-gray-700 text-lg max-w-3xl mx-auto">
             We’ll work with you to create personalized stages for each season:{" "}
             <span className="font-semibold">Land preparation</span>,{" "}
-            <span className="font-semibold">Planrting</span>,
-            <span className="font-semibold">Manuare Application</span>,{" "}
+            <span className="font-semibold">Planting</span>,{" "}
+            <span className="font-semibold">Manure Application</span>,{" "}
             <span className="font-semibold">Vegetative growth</span>, and{" "}
             <span className="font-semibold">Harvesting</span>.
           </p>
